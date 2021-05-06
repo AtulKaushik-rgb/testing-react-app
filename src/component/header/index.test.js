@@ -8,11 +8,6 @@ const setUp = (props = {}) => {
   return component;
 };
 
-// const findByTestAttr = (component,attr) =>{
-//   const wrapper = component.find(`[data-test = ${attr}]`)
-//   return wrapper;
-// }
-
 describe("header component", () => {
   let component = null;
 
@@ -22,7 +17,7 @@ describe("header component", () => {
 
   it("it should render without errors", () => {
     //const wrapper = findByTestAttr(component,'headerComponent');
-    const wrapper = component.find('.headerComponent')
+    const wrapper = component.find('.headerComponent');
     expect(wrapper.length).toBe(1);
   });
 
